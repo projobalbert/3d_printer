@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+header {
+    width: 1920px;
+    height: 900px;
+    background-image:   url(../img/header-background.jpg), 
+                        url(../img/header-background-back.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px 900px;
+    color: white;
+
+}
+
+.header-main {
+    padding-left: 380px;
+}
+
+.main-nav {
+    width: 1200px;
+    padding-left: 380px;
+    padding-right: 380px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 78px;
+}
