@@ -17,7 +17,7 @@ h1 {
 
 }
 
-.main-nav {
+.page-header__wrapper {
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -30,4 +30,15 @@ h1 {
 
 .promo {
     padding-left: 380px;
+}
+
+.page-footer__wrapper {
+    display: flex;
+    color: white;
+    width: 1200px;
+    background-color: #2E3135;
+}
+
+.footer-container__col1 {
+    width: 260px;
 }
