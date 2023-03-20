@@ -1,44 +1,37 @@
 body {
-    margin: 0;
+  margin: 0;
 }
-
 h1 {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 72px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
 }
-
 .page-header {
-    background-image: url(../img/header-background.jpg),
-        url(../img/header-background-back.jpg);
-    background-repeat: no-repeat;
-    background-size: 1920px 900px;
-    color: white;
-
+  background-image: url(../img/header-background.jpg), url(../img/header-background-back.jpg);
+  background-repeat: no-repeat;
+  background-size: 1920px 900px;
+  color: white;
 }
-
-.page-header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    padding-left: 380px;
-    padding-right: 380px;
-    padding-top: 40px;
-    align-items: center;
-    margin-bottom: 78px;
+.page-header .page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  padding-left: 380px;
+  padding-right: 380px;
+  padding-top: 40px;
+  align-items: center;
+  margin-bottom: 78px;
 }
-
 .promo {
-    padding-left: 380px;
+  padding-left: 380px;
 }
-
 .page-footer__wrapper {
-    display: flex;
-    color: white;
-    width: 1200px;
-    background-color: #2E3135;
+  display: flex;
+  color: white;
+  width: 1200px;
+  background-color: #2E3135;
 }
-
 .footer-container__col1 {
-    width: 260px;
+  width: 260px;
 }
+/*# sourceMappingURL=./style.css.map */
