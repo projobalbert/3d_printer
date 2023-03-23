@@ -2,21 +2,59 @@
     background-image: url(../img/header-background.jpg),
         url(../img/header-background-back.jpg);
     background-repeat: no-repeat;
-    background-size: 1920px 900px;
+    background-size: 100%;
     color: white;
 
     .page-header__wrapper {
         display: flex;
-        justify-content: space-between;
-        width: 1200px;
-        padding-left: 380px;
-        padding-right: 380px;
-        padding-top: 40px;
-        align-items: center;
+        .wrapper;
         margin-bottom: 78px;
+        padding-top: 40px;
+
+        .page-header__logo {
+            margin-right: 30px;
+        }
+
+        .page-header__contacts {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            text-decoration: none;
+
+            .phone,
+            .email {
+                text-decoration: none;
+                color: white;
+            }
+
+            .button-light {
+                text-decoration: none;
+                color: #42C3DE;
+                padding: 10px 26px;
+                border: 1px solid #42C3DE;
+                border-radius: 30px;
+                text-transform: uppercase;
+            }
+        }
     }
 }
 
 .promo {
     padding-left: 380px;
+    .wrapper;
+
+    .promo__slogan {
+        font-weight: 700;
+        font-size: 33px;
+        line-height: 40px;
+        margin-bottom: 52px;
+
+        b {
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 72px;
+            margin-bottom: 11px;
+        }
+    }
 }
