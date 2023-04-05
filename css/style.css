@@ -1,44 +1,148 @@
-body {
-    margin: 0;
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
 }
-
-h1 {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 72px;
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf) format('truetype');
 }
-
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
 .page-header {
-    background-image: url(../img/header-background.jpg),
-        url(../img/header-background-back.jpg);
-    background-repeat: no-repeat;
-    background-size: 1920px 900px;
-    color: white;
-
+  background-image: url(../img/header-background.jpg), url(../img/header-background-back.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
 }
-
-.page-header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    padding-left: 380px;
-    padding-right: 380px;
-    padding-top: 40px;
-    align-items: center;
-    margin-bottom: 78px;
+.page-header .page-header__wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 78px;
+  padding-top: 40px;
 }
-
+.page-header .page-header__wrapper .page-header__logo {
+  margin-right: 30px;
+}
+.page-header .page-header__wrapper .page-header__contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+}
+.page-header .page-header__wrapper .page-header__contacts .phone,
+.page-header .page-header__wrapper .page-header__contacts .email {
+  text-decoration: none;
+  color: white;
+}
+.page-header .page-header__wrapper .page-header__contacts .button-light {
+  text-decoration: none;
+  color: #42C3DE;
+  padding: 10px 26px;
+  border: 1px solid #42C3DE;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
 .promo {
-    padding-left: 380px;
+  padding-left: 380px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-
+.promo .promo__slogan {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 40px;
+  margin-bottom: 52px;
+}
+.promo .promo__slogan b {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  margin-bottom: 11px;
+}
+.promo ul {
+  font-size: 16px;
+  line-height: 28px;
+  list-style: none;
+  margin-bottom: 70px;
+}
+.promo ul li {
+  display: flex;
+  align-items: center;
+}
+.promo ul li::before {
+  display: inline-block;
+  content: "";
+  width: 13px;
+  height: 13px;
+  border: 3px solid #10AEE7;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.promo .promo__text {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.promo .promo__text::after {
+  display: inline-block;
+  margin-left: 25px;
+  content: "";
+  width: 65px;
+  border: 5px solid white;
+  height: 0px;
+}
+.promo .button-blue {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  background-image: linear-gradient(to right, #7325EF, #5AE0F7);
+  padding: 20px 150px;
+  border-radius: 30px;
+  margin-bottom: 160px;
+}
 .page-footer__wrapper {
-    display: flex;
-    color: white;
-    width: 1200px;
-    background-color: #2E3135;
+  display: flex;
+  color: white;
+  width: 1200px;
+  background-color: #2E3135;
 }
-
 .footer-container__col1 {
-    width: 260px;
+  width: 260px;
 }
+/*# sourceMappingURL=./style.css.map */
