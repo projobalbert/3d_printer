@@ -29,7 +29,6 @@
   transform: scale(0);
 }
 .wrapper {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
@@ -45,7 +44,6 @@
 }
 .page-header .page-header__wrapper {
   display: flex;
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
@@ -78,7 +76,6 @@
 }
 .promo {
   padding-left: 380px;
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
@@ -140,7 +137,6 @@
   border: 0px solid;
 }
 .products__wrapper {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
@@ -157,7 +153,7 @@
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 25%;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 40px;
 }
 .products__wrapper .products__cards .products__card {
@@ -221,7 +217,6 @@
   width: auto;
 }
 .notfound .notfound__wrapper {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
