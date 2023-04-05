@@ -17,16 +17,17 @@
         gap: 40px;
 
         .products__card {
-            /* height: 364px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 444px;
             width: 260px;
 
-            a {
+            img {
                 margin-bottom: 23px;
                 display: block;
+                border-radius: 20px;
 
-                img {
-                    border-radius: 20px;
-                }
             }
 
             h3 {
@@ -39,6 +40,7 @@
             .products__card--buttons {
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 40px;
 
                 a {
                     display: flex;
@@ -52,7 +54,6 @@
                     border: 3px solid #42C3DE;
                     border-radius: 30px;
                     text-transform: uppercase;
-                    margin-bottom: 40px;
                 }
 
                 button {
