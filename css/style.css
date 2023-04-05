@@ -256,13 +256,22 @@
   border: 0px solid;
   margin: 0 auto;
 }
-.page-footer__wrapper {
-  display: flex;
-  color: white;
-  width: 1200px;
-  background-color: #2E3135;
+.more-for-you__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-.footer-container__col1 {
-  width: 260px;
+.plan__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.page-footer__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 /*# sourceMappingURL=./style.css.map */
