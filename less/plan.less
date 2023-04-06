@@ -1,3 +1,44 @@
-.plan__wrapper {
-    .wrapper;
+.plan {
+    background-image: url(../img/plan-background.jpg);
+    color: white;
+    padding-top: 95px;
+
+    .plan__wrapper {
+        .wrapper;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 47px;
+        }
+
+        .work-steps-list {
+            list-style: none;
+            width: 550px;
+            margin: 0 auto;
+            counter-reset: flag;
+            padding-bottom: 95px;
+        }
+
+        .work-steps-item {
+            display: flex;
+            line-height: 20px;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 40px;
+        }
+
+        .work-steps-item::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: counter(flag);
+            counter-increment: flag;
+            border: 2px solid white;
+            padding: 15px 23px;
+            border-radius: 50%;
+        }
+    }
 }
