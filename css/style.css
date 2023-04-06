@@ -29,7 +29,6 @@
   transform: scale(0);
 }
 .wrapper {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
@@ -38,12 +37,13 @@
 .page-header {
   background-image: url(../img/header-background.jpg), url(../img/header-background-back.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: center center;
+  background-size: cover;
   color: white;
+  margin-bottom: 43px;
 }
 .page-header .page-header__wrapper {
   display: flex;
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
@@ -76,7 +76,6 @@
 }
 .promo {
   padding-left: 380px;
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
@@ -134,15 +133,145 @@
   background-image: linear-gradient(to right, #7325EF, #5AE0F7);
   padding: 20px 150px;
   border-radius: 30px;
-  margin-bottom: 160px;
+  margin-bottom: 60px;
+  border: 0px solid;
+}
+.products__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.products__wrapper h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 43px;
+}
+.products__wrapper .products__cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 25%;
+  justify-content: space-around;
+  gap: 40px;
+}
+.products__wrapper .products__cards .products__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 444px;
+  width: 260px;
+}
+.products__wrapper .products__cards .products__card img {
+  margin-bottom: 23px;
+  display: block;
+  border-radius: 20px;
+}
+.products__wrapper .products__cards .products__card h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 22px;
+}
+.products__wrapper .products__cards .products__card .products__card--buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.products__wrapper .products__cards .products__card .products__card--buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 119px;
+  height: 40px;
+  font-size: 10px;
+  text-decoration: none;
+  color: #42C3DE;
+  border: 3px solid #42C3DE;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+.products__wrapper .products__cards .products__card .products__card--buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 46px;
+  background-image: linear-gradient(to right, #7325EF, #5AE0F7);
+  border-radius: 30px;
+  border: 0px solid;
+  text-transform: uppercase;
+  color: white;
+}
+.products__wrapper p {
+  text-align: center;
+  color: #42C3DE;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 40px;
+}
+.notfound {
+  background-color: #2E3236;
+  width: auto;
+}
+.notfound .notfound__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.notfound .notfound__wrapper .notfound__question {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.notfound .notfound__wrapper .notfound__application {
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.notfound .notfound__wrapper .button-blue {
+  width: 426px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  background-image: linear-gradient(to right, #7325EF, #5AE0F7);
+  border-radius: 30px;
+  border: 0px solid;
+  margin: 0 auto;
+}
+.more-for-you__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.plan__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .page-footer__wrapper {
-  display: flex;
-  color: white;
-  width: 1200px;
-  background-color: #2E3135;
-}
-.footer-container__col1 {
-  width: 260px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 /*# sourceMappingURL=./style.css.map */
