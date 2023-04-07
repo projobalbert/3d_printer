@@ -6,6 +6,61 @@
     .experience {
         width: 50%;
         background-image: linear-gradient(to right; #7325EF; #5AE0F7);
+
+
+        .why-us__experience--container {
+            color: white;
+            width: 350px;
+            float: right;
+            margin-top: 85px;
+            margin-right: 70px;
+            position: relative;
+
+            .experience__header {
+                font-size: 20px;
+                line-height: 31px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            .experience__main-text {
+                font-size: 20px;
+                line-height: 31px;
+                font-weight: 500;
+            }
+
+            .experience__giant-container {
+                display: flex;
+                justify-content: space-between;
+
+                .experience__giant {
+                    font-size: 200px;
+                    line-height: 200px;
+                    font-weight: 700;
+                    align-self: last baseline;
+                }
+
+                .experience__age {
+                    font-size: 72px;
+                    line-height: 72px;
+                    font-weight: 500;
+                    align-self: last baseline;
+                }
+            }
+
+
+        }
+
+        .why-us__experience--container::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 90px;
+            right: -85px;
+            width: 50%;
+            border-top: 7px solid white;
+            transform: rotate(90deg);
+        }
     }
 
     .why {
@@ -33,7 +88,7 @@
                 background-repeat: no-repeat;
                 height: 60px;
                 padding-left: 80px;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
             }
         }
     }
