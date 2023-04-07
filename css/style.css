@@ -51,13 +51,17 @@
   margin-bottom: 78px;
   padding-top: 40px;
 }
+.page-header .page-header__wrapper p {
+  min-width: 191px;
+  margin-right: 30px;
+}
 .page-header .page-header__wrapper .page-header__logo {
   margin-right: 30px;
 }
 .page-header .page-header__wrapper .page-header__contacts {
   display: flex;
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
   align-items: center;
   text-decoration: none;
 }
@@ -74,36 +78,72 @@
   border-radius: 30px;
   text-transform: uppercase;
 }
-.promo {
+.page-header .page-header__wrapper .page-header__contacts .button-tg-logo {
+  display: none;
+}
+@media (max-width: 1060px) {
+  .page-header .page-header__wrapper .page-header__contacts .button-light {
+    display: none;
+  }
+  .page-header .page-header__wrapper .page-header__contacts .button-tg-logo {
+    display: flex;
+  }
+}
+@media (max-width: 1200px) {
+  .page-header .page-header__contacts {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 90px;
+    row-gap: 0px;
+  }
+  .page-header .page-header__contacts .phone {
+    align-self: flex-start;
+  }
+  .page-header .page-header__contacts .email {
+    position: relative;
+    order: 3;
+    top: -8px;
+  }
+  .page-header .page-header__contacts .button-light {
+    position: relative;
+    top: 4px;
+  }
+}
+@media (max-width: 830px) {
+  .page-header .page-header__contacts {
+    column-gap: 30px;
+  }
+}
+.page-header .promo {
   padding-left: 380px;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
 }
-.promo .promo__slogan {
+.page-header .promo .promo__slogan {
   font-weight: 700;
   font-size: 33px;
   line-height: 40px;
   margin-bottom: 52px;
 }
-.promo .promo__slogan b {
+.page-header .promo .promo__slogan b {
   font-weight: 700;
   font-size: 60px;
   line-height: 72px;
   margin-bottom: 11px;
 }
-.promo ul {
+.page-header .promo ul {
   font-size: 16px;
   line-height: 28px;
   list-style: none;
   margin-bottom: 70px;
 }
-.promo ul li {
+.page-header .promo ul li {
   display: flex;
   align-items: center;
 }
-.promo ul li::before {
+.page-header .promo ul li::before {
   display: inline-block;
   content: "";
   width: 13px;
@@ -112,12 +152,12 @@
   border-radius: 50%;
   margin-right: 10px;
 }
-.promo .promo__text {
+.page-header .promo .promo__text {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 25px;
 }
-.promo .promo__text::after {
+.page-header .promo .promo__text::after {
   display: inline-block;
   margin-left: 25px;
   content: "";
@@ -125,7 +165,7 @@
   border: 5px solid white;
   height: 0px;
 }
-.promo .button-blue {
+.page-header .promo .button-blue {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -429,7 +469,6 @@
 .why-us .why .why__ul {
   list-style: none;
   margin-bottom: 85px;
-  width: 570px;
   padding-left: 40px;
 }
 .why-us .why .why__ul li {
@@ -541,7 +580,8 @@
   color: white;
 }
 .page-footer .page-footer__wrapper .page-footer__socials {
-  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
   margin-right: 40px;
   margin-bottom: 60px;
 }
@@ -563,22 +603,22 @@
 .page-footer .page-footer__wrapper .page-footer__socials .page-footer__text .page-footer__promo {
   margin-bottom: 30px;
 }
-.page-footer .page-footer__wrapper .page-footer__contacts-list {
+.page-footer .page-footer__wrapper .page-footer__contacts .page-footer__contacts-list {
   display: flex;
   gap: 40px;
   list-style: none;
 }
-.page-footer .page-footer__wrapper .page-footer__contacts-list .page-footer__contacts-item {
+.page-footer .page-footer__wrapper .page-footer__contacts .page-footer__contacts-list .page-footer__contacts-item {
   width: 260px;
 }
-.page-footer .page-footer__wrapper .page-footer__contacts-list .page-footer__contacts-item h2 {
+.page-footer .page-footer__wrapper .page-footer__contacts .page-footer__contacts-list .page-footer__contacts-item h2 {
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 17px;
   text-transform: uppercase;
   font-style: normal;
 }
-.page-footer .page-footer__wrapper .page-footer__contacts-list .page-footer__contacts-item a {
+.page-footer .page-footer__wrapper .page-footer__contacts .page-footer__contacts-list .page-footer__contacts-item a {
   color: white;
   font-size: 14px;
   line-height: 18px;
@@ -586,7 +626,18 @@
   text-decoration: none;
   font-style: normal;
 }
-.page-footer .page-footer__wrapper .page-footer__contacts-list .page-footer__contacts-item p {
+.page-footer .page-footer__wrapper .page-footer__contacts .page-footer__contacts-list .page-footer__contacts-item p {
   font-style: normal;
+}
+@media (max-width: 1280px) {
+  .page-footer .page-footer__wrapper .page-footer__contacts .page-footer__contacts-list {
+    flex-direction: column;
+    width: 130px;
+  }
+}
+@media (max-width: 1280px) {
+  .page-footer .page-footer__wrapper {
+    justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=./style.css.map */
