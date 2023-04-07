@@ -15,11 +15,13 @@
 			<a class="page-header__logo" href="#">
 				<img src="img/logo.png" alt="Вывески на заказ" width="200" height="50">
 			</a>
+			<p>Студия наружной и<br>интерьерной рекламы</p>
 			<div class="page-header__contacts">
-				<p>Студия наружной и<br>интерьерной рекламы</p>
 				<a class="phone" href="tel:+998952211688">+998 95 221-16-88</a>
 				<a class="email" href="mailto:frtaras@yandex.ru">frtaras@yandex.ru</a>
 				<a class="button-light" href="#">Напишите в Телеграмм</a>
+				<a class="button-tg-logo" href="#"><img src="img/telrgram-logo-50.png" width="50" height="50"
+						alt="Логотип Телеграмм"></a>
 			</div>
 		</div>
 		<section class="promo">
@@ -198,7 +200,15 @@
 		</section>
 		<section class="why-us">
 			<div class="experience">
-				15 лет опыта
+				<div class="why-us__experience--container">
+					<p class="experience__header">Высокая экспертность</p>
+					<p class="experience__main-text">Более</p>
+					<div class="experience__giant-container">
+						<span class="experience__giant">15</span>
+						<span class="experience__age">лет</span>
+					</div>
+					<p class="experience__main-text">опыт в наружной и интерьерной<br> рекламе</p>
+				</div>
 			</div>
 			<div class="why">
 				<h2>Почему мы</h2>
@@ -236,21 +246,38 @@
 				<img src="img/founder.jpg" width="600" height="556" alt="фото основателя">
 			</div>
 		</section>
-		<section class="gallery">
-			<img src="" alt="">
-		</section>
-		<section>
-			Отзывы
-			<button><img src="" alt="влево"></button>
-			<img src="" alt="карусель из отзывов">
-			<button><img src="" alt="вправо"></button>
+		<section class="feedback">
+			<div class="feedback__wrapper">
+				<div class="feedback__container">
+					<h2>Отзывы</h2>
+					<div class="feedback__slider--inner">
+						<input type="radio" id="btn-1" name="toggle" checked>
+						<input type="radio" id="btn-2" name="toggle">
+						<input type="radio" id="btn-3" name="toggle">
+						<div class="feedback__slider--controls">
+							<label for="btn-1"></label>
+							<label for="btn-2"></label>
+							<label for="btn-3"></label>
+						</div>
+						<div class="feedback__karusel--main">
+							<img src="img/feedback_1.png" width="960" height="550" alt="">
+							<img src="img/feedback_2.png" width="960" height="550" alt="">
+							<img src="img/feedback_3.png" width="960" height="550" alt="">
+						</div>
+						<div class="karusel__buttons--container">
+							<button class="feedback__left-button"><img src="img/prev.png" alt="влево"></button>
+							<button class="feedback__right-button"><img src="img/next.png" alt=" вправо"></button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 	<footer class="page-footer">
 		<div class="page-footer__wrapper">
 			<section class="page-footer__socials">
 				<h2 class="visually-hidden">Социальные сети</h2>
-				<img src="img/logo.png" width="120" height="30" alt="logo">
+				<img class="footer-logo" src="img/logo.png" width="120" height="30" alt="logo">
 				<ul class="page-footer__socials-list">
 					<li class="page-footer__socials-item">
 						<a href="#">

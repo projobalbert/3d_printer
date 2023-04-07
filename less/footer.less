@@ -1,3 +1,85 @@
-.page-footer__wrapper {
-    .wrapper;
+.page-footer {
+    background-color: #2E3136;
+    padding-top: 60px;
+
+    .page-footer__wrapper {
+        display: flex;
+        .wrapper;
+        color: white;
+
+        .page-footer__socials {
+            min-width: 260px;
+            max-width: 260px;
+            margin-right: 40px;
+            margin-bottom: 60px;
+
+            .footer-logo {
+                margin-bottom: 30px;
+            }
+
+            .page-footer__socials-list {
+                list-style: none;
+                display: flex;
+                gap: 22px;
+                margin-bottom: 30px;
+            }
+
+            .page-footer__text {
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 18px;
+                color: white;
+
+                .page-footer__promo {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .page-footer__contacts {
+            .page-footer__contacts-list {
+                display: flex;
+                gap: 40px;
+                list-style: none;
+
+                .page-footer__contacts-item {
+                    width: 260px;
+
+                    h2 {
+                        font-size: 16px;
+                        line-height: 19px;
+                        margin-bottom: 17px;
+                        text-transform: uppercase;
+                        font-style: normal;
+                    }
+
+                    a {
+                        color: white;
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-weight: 300;
+                        text-decoration: none;
+                        font-style: normal;
+                    }
+
+                    p {
+                        font-style: normal;
+                    }
+                }
+            }
+
+            @media (max-width: 1280px) {
+                .page-footer__contacts-list {
+                    flex-direction: column;
+                    width: 130px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .page-footer__wrapper {
+            justify-content: space-between;
+        }
+    }
 }
